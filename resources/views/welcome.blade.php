@@ -85,9 +85,13 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://www.danielbat.com/acerca-de-mi/">Daniel Bautista</a>
-                    <a href="https://www.linkedin.com/in/isaac-daniel-batista/">Linkedin</a>
-                    <a href="https://twitter.com/codeisaac">Twitter</a>
+                    @if (Route::has('login'))
+                        @auth
+                            <a href="{{ url('/home') }}">Home</a>
+                        @else
+                            <a href="{{ route('login') }}">Login</a>
+                        @endauth
+                    @endif
                 </div>
             </div>
         </div>
