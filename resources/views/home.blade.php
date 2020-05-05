@@ -40,7 +40,7 @@
                                             <th>{{ $customer->phone }}</th>
                                             <th>{{ $customer->credit_card }}</th>
                                             <th>
-                                                <a href="javascript:void(0)">{{ __('Edit') }}</a>
+                                                <a href="{{ route('customer.edit', ['id' => $customer->id]) }}">{{ __('Edit') }}</a>
                                                 <a href="javascript:void(0)">{{ __('Delete') }}</a>
                                             </th>
                                         </tr>
