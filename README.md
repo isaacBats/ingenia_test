@@ -47,4 +47,4 @@ use App\User;
 
 - **[Isaac Daniel Batista](https://danielbat.com/)**
 - **[Linkeding Isaac](https://www.linkedin.com/in/isaac-daniel-batista/)**
-- <daniel@danielvat.com>
+- <daniel@danielbat.com>
