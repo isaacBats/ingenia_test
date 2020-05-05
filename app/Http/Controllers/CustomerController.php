@@ -78,4 +78,13 @@ class CustomerController extends Controller
 
         return redirect()->route('home')->with('status', '¡User successfully updated!');
     }
+
+    public function delete (Request $req, $id) {
+
+        $customer = Customer::find($id);
+        $customer->delete();
+        $name = $customer->name;
+
+        return redirect()->route('home')->with('status', "The user {$name} has been removed");
+    }
 }

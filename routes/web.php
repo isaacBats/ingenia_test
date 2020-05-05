@@ -25,3 +25,4 @@ Route::get('/customer/add', 'CustomerController@add')->name('customer.add');
 Route::post('/customer/add', 'CustomerController@create')->name('customer.create');
 Route::get('/customer/edit/{id}', 'CustomerController@edit')->name('customer.edit');
 Route::post('/customer/edit/{id}', 'CustomerController@update')->name('customer.edit');
+Route::post('/customer/delete/{id}', 'CustomerController@delete')->name('customer.delete');
